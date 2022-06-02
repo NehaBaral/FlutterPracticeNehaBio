@@ -38,6 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
             "My Bio",
             style: TextStyle(color: Colors.black),
           ),
+          automaticallyImplyLeading: false,
         ),
         body: SingleChildScrollView(
           child: Column(

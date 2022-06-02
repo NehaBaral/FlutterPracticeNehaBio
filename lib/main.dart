@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:neha_bio/screen/FeedBackScreen.dart';
 import 'package:neha_bio/screen/HomeScreen.dart';
+import 'package:neha_bio/screen/SplashScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,10 +27,11 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.grey,
       ),
-      home: const HomeScreen(),
+      home: const SplashScreen(),
       routes: {
+        SplashScreen.routeName: (context) => const SplashScreen(),
         HomeScreen.routeName: (context) => const HomeScreen(),
-        FeedBackScreen.routeName: (context) => const FeedBackScreen()
+        FeedBackScreen.routeName: (context) => const FeedBackScreen(),
       },
     );
   }
